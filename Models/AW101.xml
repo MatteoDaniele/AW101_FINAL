@@ -849,8 +849,8 @@
 		<object-name>tail rotor blade 2</object-name> 
 		<object-name>tail rotor blade 3</object-name> 
 		<object-name>tail rotor blade 4</object-name>  
-		<property>rotors/tail/rpm</property> 
-		<factor>1.000000</factor>  
+		<property>rotors/main/rpm</property>
+		<factor>0.216</factor>
 		<center>  
 			<x-m>11.5103</x-m>  
 			<y-m>0.1942</y-m> 
