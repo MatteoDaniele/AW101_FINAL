@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<!--
+###################################################################
+Author: Matteo Daniele
+Attila Frame Simulator
+Politecnico di Milano
+AW 101 model for full flight simulator based on flightgear and VR,
+with FDM given in MBDYN.
+###################################################################
+-->
+<PropertyList>
+
+<!-- let me introduce myself -->
+    <sim>
+        <description>AW101 Italian Navy</description>
+        <author>Matteo Daniele</author>
+        <status>development</status>
+        <!--MBDYN external FDM-->
+        <flight-model>null</flight-model>
+        <aero>AW101</aero>
+        <tags>
+            <tag>helicopter</tag>
+            <tag>Leonardo</tag>
+            <tag>Navy</tag>
+            <tag>Politecnico di Milano</tag>
+        </tags>
+
+        <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Pics/101_1.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Pics/101_2.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Pics/101_3.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Pics/101_4.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Pics/101_5.jpg</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>Pics/101_6.jpg</path>
+            </preview>
+        </previews>
+
+        <startup>
+            <splash-texture>Aircraft/AW101_FINAL/Pics/101_3.jpg</splash-texture>
+        </startup>
+
+<!-- model specifications -->
+        <model>
+            <path>Aircraft/AW101_FINAL/Models/AW101.xml</path>
+<!-- livery to be added ?-->
+            <livery>
+                <file type="string">Marina</file>
+            </livery>
+        </model>
+
+
+        <!-- camera views -->
+        <view n="0">
+            <name>Pilot</name>
+            <type>lookfrom</type>
+            <internal type="bool">true</internal>
+            <config>
+                <ground-level-nearplane-m type="double">5.5f</ground-level-nearplane-m>
+                <x-offset-m type="double">0.68</x-offset-m>  <!--blender y-->
+                <y-offset-m type="double">2.22</y-offset-m>  <!--blender z-->
+                <z-offset-m type="double">-4.16</z-offset-m> <!--blender x-->
+                <limits>
+                    <enabled type="bool">false</enabled>
+                    <left>
+                        <heading-max-deg type="double">120</heading-max-deg>
+                        <x-offset-max-m type="double">.10</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">45</x-offset-threshold-deg>
+                    </left>
+                    <right>
+                        <heading-max-deg type="double">120</heading-max-deg>
+                        <x-offset-max-m type="double">.20</x-offset-max-m>
+                        <x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+                    </right>
+                </limits>
+            </config>
+        </view>
+
+        <allow-toggle-cockpit>true</allow-toggle-cockpit>
+
+
+        <!-- camera views -->
+		<view n="100">
+            <name>Port</name>
+            <type>lookat</type>
+            <config>
+				 <from-model type="bool">true</from-model>
+				 <from-model-idx type="int">0</from-model-idx>
+				 <at-model type="bool">true</at-model>
+				 <at-model-idx type="int">0</at-model-idx>
+                     <x-offset-m type="double">50</x-offset-m>
+					 <y-offset-m type="double">0</y-offset-m>
+					 <z-offset-m type="double">0</z-offset-m>
+            </config>
+        </view>
+		<view n="101">
+            <name>Starboard</name>
+            <type>lookat</type>
+            <config>
+				 <from-model type="bool">true</from-model>
+				 <from-model-idx type="int">0</from-model-idx>
+				 <at-model type="bool">true</at-model>
+				 <at-model-idx type="int">0</at-model-idx>
+                     <x-offset-m type="double">-50</x-offset-m>
+					 <y-offset-m type="double">0</y-offset-m>
+					 <z-offset-m type="double">0</z-offset-m>
+            </config>
+        </view>
+        <view n="102">
+            <name>Front</name>
+            <type>lookat</type>
+            <config>
+				 <from-model type="bool">true</from-model>
+				 <from-model-idx type="int">0</from-model-idx>
+				 <at-model type="bool">true</at-model>
+				 <at-model-idx type="int">0</at-model-idx>
+                     <x-offset-m type="double">0</x-offset-m>
+					 <y-offset-m type="double">0</y-offset-m>
+					 <z-offset-m type="double">50</z-offset-m>
+            </config>
+        </view>
+
+
+<!-- sound to be added
+        <sound>
+
+        </sound>
+-->
+    </sim>
+
+    <!-- put all nasal code inside the <nasal></nasal> tags -->
+
+    <nasal>
+        <properties_initializer>
+            <file>Aircraft/AW101_FINAL/Nasal/AW_101.nas</file>
+        </properties_initializer>
+        <!--
+        <PFD_Flight_fundamentals>
+            <file>Aircraft/AW101_FINAL/Nasal/PFDDisplaysFlight.nas</file>
+        </PFD_Flight_fundamentals>
+        <PFD_accessories>
+            <file>Aircraft/AW101_FINAL/Nasal/PFDDisplayLeft.nas</file>
+        </PFD_accessories>
+
+        <terrain_informations_for_contact_constraints>
+            <file>Aircraft/AW101_FINAL/Nasal/terrain_data.nas</file>
+        </terrain_informations_for_contact_constraints>
+-->
+
+<!--
+        <Graphics_trial>
+            <file>Aircraft/AW101_FINAL/Nasal/openVG_paths.nas</file>
+        </Graphics_trial>
+-->
+    </nasal>
+
+</PropertyList>

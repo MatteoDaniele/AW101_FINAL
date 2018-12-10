@@ -1,0 +1,978 @@
+<?xml version="1.0" ?>  
+<PropertyList>  
+	<!--  
+ 
+	***********************************************************  
+	*********************************************************** 
+		Part of this file was generating by a blender script 
+  
+		Script fg2blender v0.1 alpha  (c)paf 
+		download: http://gitorious.org/paf/fg2blender  
+		contacts: http://equipe-flightgear.forumactif.com  
+		doc:      http://wiki.flightgear.org/Fr/fg2blender 
+	*********************************************************** 
+	***********************************************************  
+ 
+	-->  
+	<path>./AW101.ac</path>  
+	<!--front_gear_master-->  
+	<animation> 
+		<type>rotate</type>  
+		<object-name>landing gear leg forward 3</object-name>  
+		<object-name>landing gear front wheels </object-name>  
+		<object-name>landing gear leg forward 1</object-name> 
+		<object-name>landing gear leg forward 2</object-name>  
+		<object-name>landing gear leg forward 0</object-name>  
+		<property>gear/gear[1]/position-norm</property> 
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-4.8928</x-m> 
+			<y-m>1.4997</y-m>  
+			<z-m>1.1259</z-m>  
+		</center> 
+		<axis> 
+			<x>0.0000</x> 
+			<y>1.0000</y> 
+			<z>0.0000</z>  
+		</axis>  
+		<interpolation>  
+			<entry>  
+				<ind>0.0000</ind> 
+				<dep>0.0000</dep>  
+			</entry>  
+			<entry> 
+				<ind>1.0000</ind> 
+				<dep>90.0000</dep>  
+			</entry>  
+		</interpolation> 
+	</animation> 
+	<!--front_gear_compression_0-->  
+	<animation> 
+		<type>translate</type>  
+		<object-name>landing gear leg forward 3</object-name>  
+		<object-name>landing gear front wheels </object-name>  
+		<object-name>landing gear leg forward 1</object-name> 
+		<property>gear/gear[0]/compression-m</property>  
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>-4.8928</x-m>  
+			<y-m>-0.0003</y-m>  
+			<z-m>3.8525</z-m>  
+		</center> 
+		<axis> 
+			<x>0.0000</x>  
+			<y>0.0000</y> 
+			<z>0.5000</z>  
+		</axis>  
+		<interpolation>  
+			<entry> 
+				<ind>0.0000</ind>  
+				<dep>0.0000</dep>  
+			</entry>  
+			<entry> 
+				<ind>0.1750</ind>
+				<dep>0.1750</dep>  
+			</entry>  
+		</interpolation> 
+	</animation>  
+	<!--front_gear_compression_2--> 
+	<animation> 
+		<type>rotate</type>  
+		<object-name>landing gear leg forward 3</object-name> 
+		<property>gear/gear[0]/compression-m</property> 
+		<factor>1.000000</factor> 
+		<center> 
+			<x-m>-4.8076</x-m> 
+			<y-m>1.5003</y-m>  
+			<z-m>0.2451</z-m>  
+		</center>  
+		<axis> 
+			<x>0.0000</x>  
+			<y>0.5000</y>  
+			<z>0.0000</z> 
+		</axis> 
+		<interpolation>  
+			<entry>  
+				<ind>0.0000</ind> 
+				<dep>0.0000</dep>
+			</entry>  
+			<entry> 
+				<ind>0.1750</ind>
+				<dep>30.0000</dep>  
+			</entry>  
+		</interpolation>  
+	</animation>  
+	<!--front_gear_wheel--> 
+	<animation> 
+		<type>spin</type> 
+		<object-name>landing gear front wheels </object-name>  
+		<property>gear/gear[0]/rollspeed-ms</property>  
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-4.8976</x-m> 
+			<y-m>1.0001</y-m> 
+			<z-m>0.2469</z-m>  
+		</center>  
+		<axis>  
+			<x>0.0000</x>  
+			<y>1.0000</y> 
+			<z>0.0000</z> 
+		</axis>  
+	</animation>  
+	<!--front_gear_compression_1-->  
+	<animation> 
+		<type>rotate</type>  
+		<object-name>landing gear leg forward 2</object-name> 
+		<property>gear/gear[0]/compression-m</property> 
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>-4.8076</x-m>  
+			<y-m>1.0001</y-m>  
+			<z-m>0.6451</z-m> 
+		</center> 
+		<axis>  
+			<x>0.0000</x> 
+			<y>0.5000</y>  
+			<z>0.0000</z>  
+		</axis>  
+		<interpolation> 
+			<entry>  
+				<ind>0.0000</ind>  
+				<dep>0.0000</dep>
+			</entry> 
+			<entry>  
+				<ind>0.1750</ind>
+				<dep>-30.0000</dep> 
+			</entry> 
+		</interpolation>  
+	</animation> 
+	<!--main rotor spin-->  
+	<animation>  
+		<type>spin</type> 
+		<object-name>main rotor blade 1</object-name> 
+		<object-name>main rotor blade 2</object-name> 
+		<object-name>main rotor blade 3</object-name> 
+		<object-name>main rotor blade 4</object-name>  
+		<object-name>main rotor blade 5</object-name>  
+		<object-name>main rotor hub</object-name>  
+		<property>rotors/main/rpm</property>  
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-0.0000</x-m>  
+			<y-m>-0.0000</y-m> 
+			<z-m>4.1760</z-m> 
+		</center>  
+		<axis>  
+			<x>-0.1395</x> 
+			<y>0.0000</y> 
+			<z>1.9951</z>  
+		</axis> 
+	</animation>  
+	<!--blade 1 pitch deg-->  
+	<animation>  
+		<type>rotate</type> 
+		<object-name>main rotor blade 1</object-name>  
+		<property>rotors/main/blade_1/pitch-deg</property>  
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-0.0000</x-m>  
+			<y-m>-0.0000</y-m>  
+			<z-m>4.1760</z-m> 
+		</center> 
+		<axis>  
+			<x>0.8539</x> 
+			<y>-0.0000</y>  
+			<z>0.0597</z>  
+		</axis>  
+		<interpolation> 
+			<entry>  
+				<ind>0.5000</ind>
+				<dep>0.5000</dep>  
+			</entry> 
+			<entry>  
+				<ind>21.5000</ind>
+				<dep>21.5000</dep>  
+			</entry> 
+		</interpolation>  
+	</animation> 
+	<!--blade 1 flap deg--> 
+	<animation>  
+		<type>rotate</type> 
+		<object-name>main rotor blade 1</object-name> 
+		<property>rotors/main/blade_1/flap-deg</property> 
+		<factor>1.000000</factor> 
+		<center> 
+			<x-m>0.8539</x-m>  
+			<y-m>-0.0000</y-m>  
+			<z-m>4.2357</z-m>  
+		</center> 
+		<axis>  
+			<x>0.0003</x>  
+			<y>0.5000</y> 
+			<z>-0.0044</z> 
+		</axis>  
+		<interpolation>  
+			<entry> 
+				<ind>-9.0000</ind>
+				<dep>9.0000</dep>  
+			</entry> 
+			<entry>  
+				<ind>16.0000</ind>
+				<dep>-16.0000</dep>  
+			</entry>  
+		</interpolation>  
+	</animation> 
+	<!--blade 1 lag deg--> 
+	<animation> 
+		<type>rotate</type>  
+		<object-name>main rotor blade 1</object-name>  
+		<property>rotors/main/blade_1/lag-deg</property> 
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>0.8539</x-m> 
+			<y-m>-0.0000</y-m>  
+			<z-m>4.2357</z-m>  
+		</center>  
+		<axis>  
+			<x>-0.1125</x> 
+			<y>0.0043</y> 
+			<z>0.4872</z>  
+		</axis>  
+		<interpolation>  
+			<entry> 
+				<ind>-7.0000</ind>
+				<dep>-7.0000</dep> 
+			</entry> 
+			<entry>  
+				<ind>7.0000</ind>
+				<dep>7.0000</dep>  
+			</entry>  
+		</interpolation> 
+	</animation> 
+	<!--blade 2 pitch deg-->  
+	<animation> 
+		<type>rotate</type>  
+		<object-name>main rotor blade 2</object-name>  
+		<property>rotors/main/blade_2/pitch-deg</property>  
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-0.0000</x-m>  
+			<y-m>-0.0000</y-m>  
+			<z-m>4.1760</z-m> 
+		</center>  
+		<axis>  
+			<x>0.2639</x> 
+			<y>0.8141</y> 
+			<z>0.0185</z>  
+		</axis> 
+		<interpolation>  
+			<entry>  
+				<ind>0.5000</ind>
+				<dep>0.5000</dep> 
+			</entry> 
+			<entry> 
+				<ind>21.5000</ind>
+				<dep>21.5000</dep>  
+			</entry>  
+		</interpolation>  
+	</animation> 
+	<!--blade 2 flap deg-->  
+	<animation>  
+		<type>rotate</type> 
+		<object-name>main rotor blade 2</object-name> 
+		<property>rotors/main/blade_2/flap-deg</property>  
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>0.2639</x-m> 
+			<y-m>0.8141</y-m>  
+			<z-m>4.1944</z-m> 
+		</center>  
+		<axis>  
+			<x>-0.4740</x>  
+			<y>0.1545</y> 
+			<z>-0.0375</z>  
+		</axis>  
+		<interpolation> 
+			<entry>  
+				<ind>-9.0000</ind>
+				<dep>9.0000</dep>  
+			</entry> 
+			<entry> 
+				<ind>16.0000</ind>
+				<dep>-16.0000</dep> 
+			</entry>  
+		</interpolation>  
+	</animation>  
+	<!--blade 2 lag deg--> 
+	<animation>  
+		<type>rotate</type>  
+		<object-name>main rotor blade 2</object-name>  
+		<property>rotors/main/blade_2/lag-deg</property> 
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>0.2639</x-m>  
+			<y-m>0.8141</y-m> 
+			<z-m>4.1944</z-m>  
+		</center> 
+		<axis> 
+			<x>-0.0626</x>  
+			<y>-0.0731</y> 
+			<z>0.4907</z> 
+		</axis> 
+		<interpolation> 
+			<entry> 
+				<ind>-7.0000</ind>
+				<dep>-7.0000</dep>  
+			</entry>  
+			<entry> 
+				<ind>7.0000</ind>
+				<dep>7.0000</dep>  
+			</entry> 
+		</interpolation> 
+	</animation>  
+	<!--blade 3 pitch deg-->  
+	<animation> 
+		<type>rotate</type> 
+		<object-name>main rotor blade 3</object-name>  
+		<property>rotors/main/blade_3/pitch-deg</property> 
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>-0.0000</x-m>  
+			<y-m>-0.0000</y-m>  
+			<z-m>4.1760</z-m>  
+		</center> 
+		<axis> 
+			<x>-0.6908</x> 
+			<y>0.5031</y>  
+			<z>-0.0483</z>  
+		</axis> 
+		<interpolation>  
+			<entry> 
+				<ind>0.5000</ind>
+				<dep>0.5000</dep>  
+			</entry>  
+			<entry>  
+				<ind>21.5000</ind>
+				<dep>21.5000</dep> 
+			</entry> 
+		</interpolation>  
+	</animation>  
+	<!--blade 3 flap deg-->  
+	<animation> 
+		<type>rotate</type>  
+		<object-name>main rotor blade 3</object-name> 
+		<property>rotors/main/blade_3/flap-deg</property> 
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>-0.6908</x-m>  
+			<y-m>0.5031</y-m>  
+			<z-m>4.1277</z-m> 
+		</center> 
+		<axis>  
+			<x>-0.2929</x> 
+			<y>-0.4045</y>  
+			<z>-0.0249</z>  
+		</axis>  
+		<interpolation> 
+			<entry>  
+				<ind>-9.0000</ind>
+				<dep>9.0000</dep>  
+			</entry> 
+			<entry>  
+				<ind>16.0000</ind>
+				<dep>-16.0000</dep> 
+			</entry> 
+		</interpolation>  
+	</animation> 
+	<!--blade 3 lag deg-->  
+	<animation>  
+		<type>rotate</type> 
+		<object-name>main rotor blade 3</object-name> 
+		<property>rotors/main/blade_3/lag-deg</property> 
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-0.6908</x-m>  
+			<y-m>0.5031</y-m>  
+			<z-m>4.1277</z-m>  
+		</center> 
+		<axis>  
+			<x>0.0262</x>  
+			<y>-0.0495</y> 
+			<z>0.4969</z> 
+		</axis>  
+		<interpolation>  
+			<entry> 
+				<ind>-7.0000</ind>
+				<dep>-7.0000</dep>  
+			</entry> 
+			<entry>  
+				<ind>7.0000</ind>
+				<dep>7.0000</dep>  
+			</entry> 
+		</interpolation>  
+	</animation>  
+	<!--blade 4 pitch deg--> 
+	<animation>  
+		<type>rotate</type>  
+		<object-name>main rotor blade 4</object-name>  
+		<property>rotors/main/blade_4/pitch-deg</property> 
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-0.0000</x-m> 
+			<y-m>-0.0000</y-m>  
+			<z-m>4.1760</z-m>  
+		</center>  
+		<axis> 
+			<x>-0.6908</x>  
+			<y>-0.5031</y>  
+			<z>-0.0483</z>  
+		</axis> 
+		<interpolation>  
+			<entry>  
+				<ind>0.5000</ind>
+				<dep>0.5000</dep> 
+			</entry>  
+			<entry> 
+				<ind>21.5000</ind>
+				<dep>21.5000</dep>  
+			</entry> 
+		</interpolation> 
+	</animation> 
+	<!--blade 4 flap deg--> 
+	<animation> 
+		<type>rotate</type>  
+		<object-name>main rotor blade 4</object-name>  
+		<property>rotors/main/blade_4/flap-deg</property>  
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-0.6908</x-m>  
+			<y-m>-0.5031</y-m> 
+			<z-m>4.1277</z-m> 
+		</center>  
+		<axis>  
+			<x>0.2935</x> 
+			<y>-0.4045</y> 
+			<z>0.0161</z>  
+		</axis> 
+		<interpolation>  
+			<entry>  
+				<ind>-9.0000</ind>
+				<dep>9.0000</dep>  
+			</entry>  
+			<entry> 
+				<ind>16.0000</ind>
+				<dep>-16.0000</dep> 
+			</entry>  
+		</interpolation>  
+	</animation> 
+	<!--blade 4 lag deg-->  
+	<animation> 
+		<type>rotate</type> 
+		<object-name>main rotor blade 4</object-name>  
+		<property>rotors/main/blade_4/lag-deg</property>  
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>-0.6908</x-m> 
+			<y-m>-0.5031</y-m> 
+			<z-m>4.1277</z-m>  
+		</center>  
+		<axis>  
+			<x>0.0312</x> 
+			<y>0.0425</y>  
+			<z>0.4972</z> 
+		</axis> 
+		<interpolation>  
+			<entry> 
+				<ind>-7.0000</ind>
+				<dep>-7.0000</dep>  
+			</entry> 
+			<entry> 
+				<ind>7.0000</ind>
+				<dep>7.0000</dep> 
+			</entry>  
+		</interpolation>  
+	</animation>  
+	<!--blade 5 pitch deg--> 
+	<animation>  
+		<type>rotate</type>  
+		<object-name>main rotor blade 5</object-name>  
+		<property>rotors/main/blade_5/pitch-deg</property> 
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>-0.0000</x-m> 
+			<y-m>-0.0000</y-m> 
+			<z-m>4.1760</z-m>  
+		</center> 
+		<axis>  
+			<x>0.2639</x>  
+			<y>-0.8141</y> 
+			<z>0.0185</z> 
+		</axis> 
+		<interpolation> 
+			<entry>  
+				<ind>0.5000</ind>
+				<dep>0.5000</dep>  
+			</entry>  
+			<entry> 
+				<ind>21.5000</ind>
+				<dep>21.5000</dep>  
+			</entry> 
+		</interpolation> 
+	</animation>  
+	<!--blade 5 flap deg-->  
+	<animation> 
+		<type>rotate</type> 
+		<object-name>main rotor blade 5</object-name>  
+		<property>rotors/main/blade_5/flap-deg</property> 
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>0.2639</x-m>  
+			<y-m>-0.8141</y-m> 
+			<z-m>4.1944</z-m>  
+		</center>  
+		<axis> 
+			<x>0.4747</x>  
+			<y>0.1545</y>  
+			<z>0.0288</z>  
+		</axis> 
+		<interpolation> 
+			<entry>  
+				<ind>-9.0000</ind>
+				<dep>9.0000</dep>  
+			</entry>  
+			<entry>  
+				<ind>16.0000</ind>
+				<dep>-16.0000</dep>  
+			</entry>  
+		</interpolation>  
+	</animation> 
+	<!--blade 5 lag deg-->  
+	<animation>  
+		<type>rotate</type>  
+		<object-name>main rotor blade 5</object-name> 
+		<property>rotors/main/blade_5/lag-deg</property>  
+		<factor>1.000000</factor> 
+		<center> 
+			<x-m>0.2639</x-m>  
+			<y-m>-0.8141</y-m> 
+			<z-m>4.1944</z-m> 
+		</center> 
+		<axis> 
+			<x>-0.0545</x> 
+			<y>0.0757</y>  
+			<z>0.4912</z>  
+		</axis>  
+		<interpolation> 
+			<entry>  
+				<ind>-7.0000</ind>
+				<dep>-7.0000</dep> 
+			</entry> 
+			<entry>  
+				<ind>7.0000</ind>
+				<dep>7.0000</dep> 
+			</entry> 
+		</interpolation>  
+	</animation> 
+	<!--main_gear_master-->  
+	<animation>  
+		<type>rotate</type>  
+		<object-name>landing gear main leg left 0</object-name>  
+		<object-name>landing gear main leg right 0</object-name>  
+		<object-name>landing gear main leg left 2</object-name> 
+		<object-name>landing gear main leg left 1</object-name> 
+		<object-name>landing gear main leg left 3</object-name> 
+		<object-name>landing gear main wheels left</object-name>  
+		<object-name>landing gear main leg right 1</object-name>  
+		<object-name>landing gear main leg right 3</object-name> 
+		<object-name>landing gear main wheels right</object-name>  
+		<object-name>landing gear main leg right 2</object-name> 
+		<property>gear/gear[2]/position-norm</property> 
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>2.2906</x-m>  
+			<y-m>2.5367</y-m>  
+			<z-m>1.1948</z-m> 
+		</center> 
+		<axis>  
+			<x>0.0000</x>  
+			<y>1.0000</y>  
+			<z>0.0000</z> 
+		</axis>  
+		<interpolation> 
+			<entry> 
+				<ind>0.0000</ind>  
+				<dep>0.0000</dep> 
+			</entry>  
+			<entry>  
+				<ind>1.0000</ind> 
+				<dep>-80.0000</dep> 
+			</entry>  
+		</interpolation> 
+	</animation>  
+	<!--left_gear_compression_1-->  
+	<animation>  
+		<type>rotate</type> 
+		<object-name>landing gear main leg left 2</object-name>  
+		<property>gear/gear[2]/compression-m</property>  
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>2.4396</x-m>  
+			<y-m>-2.5427</y-m>  
+			<z-m>0.7429</z-m> 
+		</center> 
+		<axis>  
+			<x>0.0000</x> 
+			<y>-0.5000</y>  
+			<z>0.0000</z>  
+		</axis> 
+		<interpolation> 
+			<entry> 
+				<ind>0.0000</ind> 
+				<dep>-0.0000</dep>  
+			</entry>  
+			<entry>  
+				<ind>0.1750</ind>
+				<dep>40.0000</dep> 
+			</entry>  
+		</interpolation>  
+	</animation> 
+	<!--main_gear_master_1--> 
+	<animation>  
+		<type>translate</type>  
+		<object-name>landing gear main leg left 1</object-name> 
+		<object-name>landing gear main leg left 3</object-name> 
+		<object-name>landing gear main wheels left</object-name>  
+		<object-name>landing gear main leg right 1</object-name> 
+		<object-name>landing gear main leg right 3</object-name>  
+		<object-name>landing gear main wheels right</object-name>  
+		<property>gear/gear[2]/position-norm</property>  
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>2.0655</x-m>  
+			<y-m>-1.5413</y-m> 
+			<z-m>2.4716</z-m>  
+		</center>  
+		<axis>  
+			<x>-0.1736</x> 
+			<y>0.0000</y> 
+			<z>0.9848</z>  
+		</axis> 
+		<interpolation>
+			<entry>
+				<ind>0.0000</ind>
+				<dep>0.0000</dep>
+			</entry>
+			<entry>  
+				<ind>0.0000</ind>  
+				<dep>-0.0244</dep>
+			</entry>  
+		</interpolation>  
+	</animation>  
+	<!--left_gear_compression_0--> 
+	<animation>  
+		<type>translate</type>  
+		<object-name>landing gear main leg left 1</object-name>  
+		<object-name>landing gear main leg left 3</object-name> 
+		<object-name>landing gear main wheels left</object-name>  
+		<property>gear/gear[2]/compression-m</property> 
+		<factor>1.000000</factor> 
+		<center>  
+			<x-m>-12.3916</x-m> 
+			<y-m>-1.5413</y-m> 
+			<z-m>84.4621</z-m> 
+		</center> 
+		<axis> 
+			<x>-0.1736</x>  
+			<y>0.0000</y>  
+			<z>0.9848</z>  
+		</axis> 
+		<interpolation>  
+			<entry>  
+				<ind>0.0000</ind> 
+				<dep>0.0000</dep> 
+			</entry>  
+			<entry>  
+				<ind>0.1750</ind>
+				<dep>0.3500</dep> 
+			</entry>  
+		</interpolation> 
+	</animation>  
+	<!--left_gear_compression_2-->  
+	<animation>  
+		<type>rotate</type>  
+		<object-name>landing gear main leg left 3</object-name>  
+		<property>gear/gear[2]/compression-m</property> 
+		<factor>1.000000</factor> 
+		<center> 
+			<x-m>-12.1054</x-m>  
+			<y-m>-2.0422</y-m>  
+			<z-m>83.2492</z-m> 
+		</center>  
+		<axis> 
+			<x>0.0000</x> 
+			<y>-0.5000</y>  
+			<z>0.0000</z>  
+		</axis>  
+		<interpolation>  
+			<entry> 
+				<ind>0.0000</ind> 
+				<dep>-0.0000</dep>  
+			</entry>  
+			<entry>  
+				<ind>0.1750</ind>
+				<dep>-42.0000</dep>  
+			</entry> 
+		</interpolation> 
+	</animation>  
+	<!--left_gear_wheel--> 
+	<animation>  
+		<type>spin</type>  
+		<object-name>landing gear main wheels left</object-name> 
+		<property>gear/gear[2]/rollspeed-ms</property> 
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>-12.1723</x-m>  
+			<y-m>-2.5405</y-m>  
+			<z-m>83.2386</z-m>  
+		</center> 
+		<axis>  
+			<x>0.0000</x>  
+			<y>-1.0000</y>  
+			<z>0.0000</z> 
+		</axis>  
+	</animation>  
+	<!--right_gear_compression_0--> 
+	<animation> 
+		<type>translate</type>  
+		<object-name>landing gear main leg right 1</object-name> 
+		<object-name>landing gear main leg right 3</object-name>  
+		<object-name>landing gear main wheels right</object-name>  
+		<property>gear/gear[1]/compression-m</property> 
+		<factor>1.000000</factor> 
+		<center> 
+			<x-m>-12.3919</x-m> 
+			<y-m>1.5367</y-m>  
+			<z-m>84.4631</z-m>  
+		</center>  
+		<axis>  
+			<x>-0.1736</x> 
+			<y>0.0000</y>  
+			<z>0.9848</z>  
+		</axis> 
+		<interpolation> 
+			<entry>  
+				<ind>0.0000</ind>  
+				<dep>0.0000</dep> 
+			</entry> 
+			<entry>  
+				<ind>0.1750</ind>
+				<dep>0.3500</dep>  
+			</entry>  
+		</interpolation>  
+	</animation> 
+	<!--right_gear_compression_2-->  
+	<animation>  
+		<type>rotate</type> 
+		<object-name>landing gear main leg right 3</object-name>  
+		<property>gear/gear[1]/compression-m</property>  
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>-12.1068</x-m> 
+			<y-m>2.0393</y-m>  
+			<z-m>83.2570</z-m> 
+		</center>  
+		<axis>  
+			<x>0.0000</x>  
+			<y>0.5000</y> 
+			<z>0.0000</z>  
+		</axis>  
+		<interpolation>  
+			<entry> 
+				<ind>0.0000</ind>  
+				<dep>0.0000</dep>  
+			</entry>  
+			<entry> 
+				<ind>0.1750</ind>
+				<dep>42.0000</dep> 
+			</entry> 
+		</interpolation>  
+	</animation> 
+	<!--right_gear_wheel--> 
+	<animation> 
+		<type>spin</type> 
+		<object-name>landing gear main wheels right</object-name> 
+		<property>gear/gear[1]/rollspeed-ms</property>  
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>-12.1726</x-m> 
+			<y-m>2.5376</y-m>  
+			<z-m>83.2396</z-m>  
+		</center> 
+		<axis> 
+			<x>0.0000</x>  
+			<y>1.0000</y>  
+			<z>0.0000</z> 
+		</axis> 
+	</animation>  
+	<!--right_gear_compression_1--> 
+	<animation>  
+		<type>rotate</type>  
+		<object-name>landing gear main leg right 2</object-name>  
+		<property>gear/gear[1]/compression-m</property>  
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>2.4393</x-m> 
+			<y-m>2.5388</y-m> 
+			<z-m>0.7439</z-m>  
+		</center>  
+		<axis> 
+			<x>0.0000</x>  
+			<y>0.5000</y> 
+			<z>0.0000</z> 
+		</axis>  
+		<interpolation>  
+			<entry>  
+				<ind>0.0000</ind>  
+				<dep>-0.0000</dep> 
+			</entry> 
+			<entry>  
+				<ind>0.1750</ind>
+				<dep>-42.0000</dep>  
+			</entry> 
+		</interpolation>  
+	</animation> 
+	<!--tail_rotor_spin--> 
+	<animation>  
+		<type>spin</type> 
+		<object-name>tail rotor</object-name>  
+		<object-name>tail rotor blade 1</object-name>  
+		<object-name>tail rotor blade 2</object-name> 
+		<object-name>tail rotor blade 3</object-name> 
+		<object-name>tail rotor blade 4</object-name>  
+		<property>rotors/tail/rpm</property> 
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>11.5103</x-m>  
+			<y-m>0.1942</y-m> 
+			<z-m>4.4111</z-m>  
+		</center>  
+		<axis>  
+			<x>0.0000</x> 
+			<y>2.0000</y>  
+			<z>0.0000</z>  
+		</axis> 
+	</animation> 
+	<!--tail_rotor_blade_1-->  
+	<animation> 
+		<type>rotate</type>  
+		<object-name>tail rotor blade 1</object-name>  
+		<property>rotors/tail/pitch-deg</property> 
+		<factor>1.000000</factor> 
+		<center> 
+			<x-m>11.5103</x-m> 
+			<y-m>-0.8058</y-m>  
+			<z-m>4.4111</z-m>  
+		</center>  
+		<axis>  
+			<x>1.0000</x> 
+			<y>0.0000</y>  
+			<z>0.0000</z>  
+		</axis> 
+		<interpolation> 
+			<entry>  
+				<ind>-17.0000</ind>
+				<dep>-17.0000</dep> 
+			</entry> 
+			<entry>  
+				<ind>17.0000</ind>
+				<dep>17.0000</dep>  
+			</entry>  
+		</interpolation>  
+	</animation> 
+	<!--tail_rotor_blade_2-->  
+	<animation>  
+		<type>rotate</type> 
+		<object-name>tail rotor blade 2</object-name>  
+		<property>rotors/tail/pitch-deg</property>  
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>11.5103</x-m> 
+			<y-m>-0.8058</y-m>  
+			<z-m>4.4111</z-m> 
+		</center>  
+		<axis>  
+			<x>0.0000</x>  
+			<y>0.0000</y> 
+			<z>-1.0000</z>  
+		</axis>  
+		<interpolation>  
+			<entry> 
+				<ind>-17.0000</ind>
+				<dep>-17.0000</dep>  
+			</entry>  
+			<entry> 
+				<ind>17.0000</ind>
+				<dep>17.0000</dep> 
+			</entry> 
+		</interpolation>  
+	</animation> 
+	<!--tail_rotor_blade_3--> 
+	<animation> 
+		<type>rotate</type> 
+		<object-name>tail rotor blade 3</object-name> 
+		<property>rotors/tail/pitch-deg</property>  
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>11.5103</x-m> 
+			<y-m>-0.8058</y-m>  
+			<z-m>4.4111</z-m>  
+		</center> 
+		<axis> 
+			<x>-1.0000</x>  
+			<y>-0.0000</y>  
+			<z>0.0000</z> 
+		</axis> 
+		<interpolation>  
+			<entry> 
+				<ind>-17.0000</ind>
+				<dep>-17.0000</dep>  
+			</entry>  
+			<entry>  
+				<ind>17.0000</ind>
+				<dep>17.0000</dep> 
+			</entry> 
+		</interpolation> 
+	</animation>  
+	<!--tail_rotor_blade_4-->  
+	<animation> 
+		<type>rotate</type>  
+		<object-name>tail rotor blade 4</object-name> 
+		<property>rotors/tail/pitch-deg</property> 
+		<factor>1.000000</factor>  
+		<center>  
+			<x-m>11.5103</x-m>  
+			<y-m>-0.8058</y-m>  
+			<z-m>4.4111</z-m> 
+		</center> 
+		<axis>  
+			<x>0.0000</x>  
+			<y>0.0000</y>  
+			<z>1.0000</z> 
+		</axis>  
+		<interpolation> 
+			<entry> 
+				<ind>-17.0000</ind>
+				<dep>-17.0000</dep> 
+			</entry>  
+			<entry>  
+				<ind>17.0000</ind>
+				<dep>17.0000</dep> 
+			</entry>  
+		</interpolation> 
+	</animation>
+
+	<model>
+		<path>AW101_glass.ac</path>
+	</model>
+</PropertyList>  
+  

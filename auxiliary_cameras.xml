@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--camera options to set a secondary screen-->
+<!--remember to change the line <rendering>
+    in the defaults.xml file
+    with the line
+    <rendering include="Aircraft/AW_101_NO_FDM/auxiliary_cameras.xml">-->
+<PropertyList>
+
+    <!-- first define the windows -->
+<!--
+        <window>
+          <name>PFD</name>
+          <host-name type="string"></host-name>
+          <display>0</display>
+          <screen>0</screen>
+          <x>1920</x>
+          <y>1080</y>
+          <decoration type = "bool">true</decoration>
+		</window>
+-->
+    <!-- then define the cameras inside the created window -->
+
+    <camera>
+        <!-- to which window the camera refers to -->
+            <window>
+                <name>Main Window</name>
+            </window>
+            <fullscreen type="bool">false</fullscreen>
+            <fovy-deg type="double">60.0</fovy-deg>
+    </camera>
+
+    <camera>
+        <display>1</display>
+        <screen>0</screen>
+        <window>
+        <name>Main Window</name>
+        </window>
+        <viewport>
+            <x>1280</x>
+            <y>600</y>
+          <width>640</width>
+          <height>320</height>
+        </viewport>
+        <!-- for azimuthal rotation of camera wrt 0 heading -->
+        <view>
+            <heading-deg type = "double">0</heading-deg>
+            <x>50</x>
+            <y>0</y>   <!-- fg z -->
+            <z>0</z>  <!-- fg -x-->
+        </view>
+        <fovy-deg type="double">60.0</fovy-deg>
+        <width>640</width>
+        <height>320</height>
+        <decoration type = "bool">true</decoration>
+        <fullscreen type="bool">false</fullscreen>
+    </camera>
+
+
+
+</PropertyList>
+
