@@ -64,7 +64,7 @@ with FDM given in MBDYN.
 
 <!-- model specifications -->
         <model>
-            <path>Aircraft/AW101_FINAL/Models/AW101.xml</path>
+            <path>Models/AW101.xml</path>
 <!-- livery to be added ?-->
             <livery>
                 <file type="string">Marina</file>

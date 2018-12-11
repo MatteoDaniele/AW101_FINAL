@@ -850,7 +850,7 @@
 		<object-name>tail rotor blade 3</object-name> 
 		<object-name>tail rotor blade 4</object-name>  
 		<property>rotors/main/rpm</property>
-		<factor>0.216</factor>
+		<factor>0.216149</factor>
 		<center>  
 			<x-m>11.5103</x-m>  
 			<y-m>0.1942</y-m> 
@@ -973,6 +973,9 @@
 
 	<model>
 		<path>AW101_glass.ac</path>
+	</model>
+	<model>
+		<path>Instruments/PFD/PFD.xml</path>
 	</model>
 </PropertyList>  
   
