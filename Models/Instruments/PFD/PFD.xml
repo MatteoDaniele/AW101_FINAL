@@ -68,7 +68,7 @@
 				<dep>60.0000</dep>  
 			</entry> 
 		</interpolation>  
-	</animation>  
+	</animation>
 	<!--sbandometer-->  
 	<animation>
 		<type>translate</type> 
