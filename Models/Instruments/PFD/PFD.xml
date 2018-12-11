@@ -70,7 +70,7 @@
 		</interpolation>  
 	</animation>  
 	<!--sbandometer-->  
-	<animation> 
+	<animation>
 		<type>translate</type> 
 		<object-name>Sideslip_indicator</object-name>  
 		<property>accelerations/ned/east-accel-fps_sec</property> 
