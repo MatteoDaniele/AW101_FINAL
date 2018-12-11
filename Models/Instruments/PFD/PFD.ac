@@ -1279,7 +1279,7 @@ data 18
 Altitude_indicator
 texrep 1 1
 crease 40.0 
-texture "pfd.png" 
+texture "alt.png" 
 numvert 128
 -5.190924 1.97597 -0.75024
 -5.191142 1.976879 -0.750217
