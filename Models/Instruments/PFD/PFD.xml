@@ -1,22 +1,22 @@
 <?xml version="1.0" ?>  
-<PropertyList> 
-	<!--    
-  
-	***********************************************************  
-	***********************************************************    
-		Part of this file was generating by a blender script  
+<PropertyList>  
+	<!--     
     
-		Script fg2blender v0.1 alpha  (c)paf    
-		download: http://gitorious.org/paf/fg2blender  
-		contacts: http://equipe-flightgear.forumactif.com  
-		doc:      http://wiki.flightgear.org/Fr/fg2blender    
-	***********************************************************  
+	***********************************************************   
+	***********************************************************     
+		Part of this file was generating by a blender script    
+      
+		Script fg2blender v0.1 alpha  (c)paf      
+		download: http://gitorious.org/paf/fg2blender    
+		contacts: http://equipe-flightgear.forumactif.com   
+		doc:      http://wiki.flightgear.org/Fr/fg2blender     
 	***********************************************************    
-    
-	-->  
-	<path>./PFD.ac</path> 
-	<!--altitude_indicator-->  
-	<animation>  
+	***********************************************************      
+      
+	--> 
+	<path>./PFD.ac</path>  
+	<!--altitude_indicator--> 
+	<animation> 
 		<type>rotate</type>  
 		<object-name>altitude_needle</object-name> 
 		<property>position/altitude-ft</property>  
@@ -27,25 +27,25 @@
 			<z-m>1.9993</z-m> 
 		</center>  
 		<axis>  
-			<x>0.0972</x> 
+			<x>0.0972</x>  
 			<y>0.0000</y> 
-			<z>0.0233</z> 
-		</axis> 
+			<z>0.0233</z>  
+		</axis>  
 		<interpolation>  
-			<entry>  
+			<entry> 
 				<ind>0.0000</ind>  
 				<dep>0.0000</dep>  
 			</entry> 
-			<entry>  
+			<entry> 
 				<ind>100.0</ind>  
 				<dep>-360.0000</dep> 
-			</entry> 
+			</entry>  
 		</interpolation>  
-	</animation>  
+	</animation> 
 	<!--roll_indicator--> 
 	<animation> 
-		<type>rotate</type>  
-		<object-name>helicopter_symbol</object-name> 
+		<type>rotate</type> 
+		<object-name>helicopter_symbol</object-name>  
 		<property>orientation/roll-deg</property>  
 		<factor>1.000000</factor>  
 		<center>  
@@ -53,7 +53,7 @@
 			<y-m>0.6867</y-m>  
 			<z-m>1.9283</z-m>  
 		</center> 
-		<axis>  
+		<axis> 
 			<x>0.0972</x>  
 			<y>0.0000</y>  
 			<z>0.0233</z> 
@@ -66,76 +66,76 @@
 			<entry> 
 				<ind>60.0</ind>  
 				<dep>60.0000</dep>  
-			</entry>  
-		</interpolation> 
+			</entry> 
+		</interpolation>  
 	</animation>  
 	<!--sbandometer-->  
-	<animation>  
+	<animation> 
 		<type>translate</type> 
 		<object-name>Sideslip_indicator</object-name>  
 		<property>accelerations/ned/east-accel-fps_sec</property> 
-		<factor>1.000000</factor> 
+		<factor>1.000000</factor>  
 		<center>  
-			<x-m>-5.1677</x-m> 
+			<x-m>-5.1677</x-m>  
 			<y-m>0.8062</y-m> 
-			<z-m>1.8815</z-m> 
-		</center> 
-		<axis> 
-			<x>0.0000</x>  
+			<z-m>1.8815</z-m>  
+		</center>  
+		<axis>  
+			<x>0.0000</x> 
 			<y>0.1000</y>  
 			<z>0.0000</z>  
-		</axis> 
-		<interpolation>  
+		</axis>  
+		<interpolation> 
 			<entry>  
 				<ind>-1.0</ind> 
 				<dep>-0.0054</dep> 
 			</entry>  
-			<entry>  
+			<entry> 
 				<ind>1.0</ind> 
 				<dep>0.0054</dep> 
-			</entry>  
+			</entry> 
 		</interpolation> 
 	</animation>  
 	<!--speed_indicator-->  
 	<animation>  
-		<type>rotate</type>  
+		<type>rotate</type> 
 		<object-name>airspeed_needle</object-name>  
-		<property>velocities/airspeed-kt</property> 
+		<property>velocities/airspeed-kt</property>  
 		<factor>1.000000</factor> 
 		<center> 
 			<x-m>-5.0936</x-m>  
 			<y-m>0.6423</y-m>  
 			<z-m>1.9993</z-m> 
-		</center>  
-		<axis> 
+		</center> 
+		<axis>  
 			<x>0.0972</x> 
 			<y>0.0000</y>  
 			<z>0.0233</z>  
 		</axis>  
 		<interpolation>  
-			<entry> 
-				<ind>0.0000</ind> 
-				<dep>0.0000</dep>  
-			</entry>  
 			<entry>  
-				<ind>200.0</ind> 
-				<dep>-300.0000</dep>  
+				<ind>0.0000</ind> 
+				<dep>0.0000</dep> 
 			</entry> 
+			<entry>  
+				<ind>200.0</ind>  
+				<dep>-300.0000</dep> 
+			</entry>  
 		</interpolation> 
-	</animation>  
-	<!--vertical_speed--> 
+	</animation> 
+	<!--vertical_speed-->  
 	<animation>  
 		<type>translate</type>  
-		<object-name>vertical_speed_needle</object-name> 
+		<object-name>vertical_speed_needle</object-name>  
 		<property>velocities/vertical-speed-fps</property> 
-		<factor>60.000000</factor>  
-		<center> 
+		<factor>60.000000</factor> 
+		<center>  
 			<x-m>-5.1775</x-m>  
 			<y-m>0.7865</y-m>  
-			<z-m>1.9222</z-m>  
-		</center> 
-		<axis>  
-			<x>0.0233</x>  
+			<z-m>1.9222</z-m> 
+		</center>  
+		<axis> 
+			<x>0.0233</x> 
 			<y>0.0000</y>  
 			<z>-0.0972</z> 
 		</axis>  
@@ -146,25 +146,25 @@
 			</entry> 
 			<entry>  
 				<ind>-200.0</ind>  
-				<dep>0.0287</dep> 
+				<dep>0.0287</dep>  
 			</entry> 
-			<entry> 
-				<ind>-100.0</ind> 
+			<entry>  
+				<ind>-100.0</ind>  
 				<dep>0.0191</dep>  
-			</entry>  
+			</entry> 
 			<entry>  
 				<ind>-50.0</ind>  
 				<dep>0.0096</dep> 
-			</entry>  
+			</entry> 
 			<entry>  
 				<ind>0.00</ind> 
-				<dep>0.0000</dep> 
-			</entry>  
-			<entry>  
-				<ind>50.0</ind> 
-				<dep>-0.0096</dep> 
+				<dep>0.0000</dep>  
 			</entry>  
 			<entry> 
+				<ind>50.0</ind> 
+				<dep>-0.0096</dep> 
+			</entry> 
+			<entry>  
 				<ind>100.0</ind>  
 				<dep>-0.0191</dep>  
 			</entry>  
@@ -172,53 +172,55 @@
 				<ind>300.0</ind>  
 				<dep>-0.0287</dep>  
 			</entry> 
-			<entry>  
+			<entry> 
 				<ind>400.0</ind>  
 				<dep>-0.0383</dep>  
 			</entry> 
 		</interpolation> 
-	</animation>  
-	<!-- 
-  
-	***********************************************************  
-	***********************************************************  
-		Part of this file was generating by a blender script 
-  
-		Script fg2blender v0.1 alpha  (c)paf  
-		download: http://gitorious.org/paf/fg2blender  
-		contacts: http://equipe-flightgear.forumactif.com 
-		doc:      http://wiki.flightgear.org/Fr/fg2blender  
-	***********************************************************  
-	***********************************************************  
- 
-	-->  
-	<path>./PFD.ac</path> 
-	<!--altitude_indicator--> 
-	<animation>  
-		<type>rotate</type> 
-		<object-name>altitude_needle</object-name> 
-		<property>position/altitude-ft</property> 
-		<factor>1.000000</factor> 
-		<center> 
-			<x-m>-5.0936</x-m>  
-			<y-m>0.7312</y-m>  
-			<z-m>1.9993</z-m>  
-		</center> 
-		<axis>  
-			<x>0.0972</x>  
-			<y>0.0000</y> 
-			<z>0.0233</z> 
-		</axis>  
-		<interpolation>  
-			<entry> 
-				<ind>0.0000</ind> 
-				<dep>-0.0000</dep>  
-			</entry> 
-			<entry>  
-				<ind>0.0909</ind>  
-				<dep>-360.0000</dep>  
-			</entry>  
-		</interpolation>  
-	</animation> 
+	</animation>
+
+	<animation>
+		<name>attitude indicator</name>
+		<type>texmultiple</type>
+		<object-name>Attitute_indicator</object-name>
+		<transform>
+			<subtype>textranslate</subtype>
+			<property>orientation/pitch-deg</property>
+			<interpolation>
+				<entry><ind>-90.0</ind><dep>-0.3515625</dep></entry>
+				<!--
+				<entry><ind>-80.0</ind><dep>-0.0390625</dep></entry>
+				<entry><ind>-70.0</ind><dep>-0.0390625</dep></entry>
+				<entry><ind>-60.0</ind><dep>-0.0390625</dep></entry>
+				<entry><ind>-50.0</ind><dep>-0.0390625</dep></entry>
+				<entry><ind>-40.0</ind><dep>-0.0390625</dep></entry>
+				<entry><ind>-30.0</ind><dep>-0.0390625</dep></entry>
+				<entry><ind>-20.0</ind><dep>-0.0390625</dep></entry>
+				<entry><ind>-10.0</ind><dep>-0.0390625</dep></entry>
+				-->
+				<entry><ind>0.0</ind><dep>0.0</dep></entry>
+				<!--
+				<entry><ind>10.0</ind><dep>0.0390625</dep></entry>
+				<entry><ind>20.0</ind><dep>0.0390625</dep></entry>
+				<entry><ind>30.0</ind><dep>0.0390625</dep></entry>
+				<entry><ind>40.0</ind><dep>0.0390625</dep></entry>
+				<entry><ind>50.0</ind><dep>0.0390625</dep></entry>
+				<entry><ind>60.0</ind><dep>0.0390625</dep></entry>
+				<entry><ind>70.0</ind><dep>0.0390625</dep></entry>
+				<entry><ind>80.0</ind><dep>0.0390625</dep></entry>-->
+				<entry><ind>90.0</ind><dep>0.3515625</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+		</transform>
+		<transform>
+			<subtype>texrotate</subtype>
+			<property>orientation/roll-deg</property>
+			<center><x>0.5</x><y>0.5</y></center>
+			<axis><x>0</x><y>0</y><z>-1</z></axis>
+		</transform>
+	</animation>
+
+
+
 </PropertyList> 
  
