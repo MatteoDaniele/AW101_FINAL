@@ -45,7 +45,7 @@
 	<!--roll_indicator--> 
 	<animation> 
 		<type>rotate</type> 
-		<object-name>helicopter_symbol</object-name>  
+		<object-name>roll_triangle</object-name>
 		<property>orientation/roll-deg</property>  
 		<factor>1.000000</factor>  
 		<center>  
