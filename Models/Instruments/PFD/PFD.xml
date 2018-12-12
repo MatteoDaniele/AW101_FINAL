@@ -240,7 +240,7 @@
 	<!-- altitude indicator -->
 	<animation>
 		<type>textranslate</type>
-			<object-name>airspeed_units</object-name>
+			<object-name>altitude_units</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
 				<entry><ind>0.0</ind><dep>0.0</dep></entry>
@@ -251,7 +251,7 @@
 
 	<animation>
 		<type>textranslate</type>
-			<object-name>airspeed_tenths</object-name>
+			<object-name>altitude_tenths</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
 				<entry><ind>10.0</ind><dep>0.0</dep></entry>
@@ -262,7 +262,7 @@
 
 	<animation>
 		<type>textranslate</type>
-			<object-name>airspeed_hundreds</object-name>
+			<object-name>altitude_hundreds</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
 				<entry><ind>100.0</ind><dep>0.0</dep></entry>
@@ -272,7 +272,7 @@
 	</animation>
 	<animation>
 		<type>textranslate</type>
-			<object-name>airspeed_thousands</object-name>
+			<object-name>altitude_thousands</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
 				<entry><ind>1000.0</ind><dep>0.0</dep></entry>
@@ -283,7 +283,7 @@
 
 	<animation>
 		<type>textranslate</type>
-			<object-name>airspeed_tenthousands</object-name>
+			<object-name>altitude_tenthousands</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
 				<entry><ind>10000.0</ind><dep>0.0</dep></entry>
