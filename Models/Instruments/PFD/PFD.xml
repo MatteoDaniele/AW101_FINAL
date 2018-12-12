@@ -128,7 +128,7 @@
 		<type>translate</type>  
 		<object-name>vertical_speed_needle</object-name>  
 		<property>velocities/vertical-speed-fps</property> 
-		<factor>60.000000</factor> 
+		<factor>0.01666666667</factor>
 		<center>  
 			<x-m>-5.1775</x-m>  
 			<y-m>0.7865</y-m>  
@@ -206,85 +206,90 @@
 		<type>textranslate</type>
 			<object-name>airspeed_units</object-name>
 			<property>velocities/airspeed-kt</property>
-			<factor>0.1</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
+			<interpolation>
+				<entry><ind>0.0</ind><dep>0.0</dep></entry>
+				<entry><ind>9.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
 	</animation>
 
 	<animation>
 		<type>textranslate</type>
 			<object-name>airspeed_tenths</object-name>
 			<property>velocities/airspeed-kt</property>
-			<factor>0.01</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
+			<interpolation>
+				<entry><ind>10.0</ind><dep>0.0</dep></entry>
+				<entry><ind>90.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
 	</animation>
-
 
 	<animation>
 		<type>textranslate</type>
 			<object-name>airspeed_hundreds</object-name>
 			<property>velocities/airspeed-kt</property>
-			<factor>0.001</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
+			<interpolation>
+				<entry><ind>100.0</ind><dep>0.0</dep></entry>
+				<entry><ind>900.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
 	</animation>
+
+
 
 	<!-- altitude indicator -->
 	<animation>
 		<type>textranslate</type>
-			<object-name>altitude_units</object-name>
+			<object-name>airspeed_units</object-name>
 			<property>position/altitude-ft</property>
-			<factor>0.1</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
+			<interpolation>
+				<entry><ind>0.0</ind><dep>0.0</dep></entry>
+				<entry><ind>9.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
 	</animation>
 
 	<animation>
 		<type>textranslate</type>
-			<object-name>altitude_tenths</object-name>
+			<object-name>airspeed_tenths</object-name>
 			<property>position/altitude-ft</property>
-			<factor>0.01</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
+			<interpolation>
+				<entry><ind>10.0</ind><dep>0.0</dep></entry>
+				<entry><ind>90.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
 	</animation>
-
 
 	<animation>
 		<type>textranslate</type>
-			<object-name>altitude_hundreds</object-name>
+			<object-name>airspeed_hundreds</object-name>
 			<property>position/altitude-ft</property>
-			<factor>0.001</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
+			<interpolation>
+				<entry><ind>100.0</ind><dep>0.0</dep></entry>
+				<entry><ind>900.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
 	</animation>
-
+	<animation>
+		<type>textranslate</type>
+			<object-name>airspeed_thousands</object-name>
+			<property>position/altitude-ft</property>
+			<interpolation>
+				<entry><ind>1000.0</ind><dep>0.0</dep></entry>
+				<entry><ind>9000.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
+	</animation>
 
 	<animation>
 		<type>textranslate</type>
-			<object-name>altitude_thousands</object-name>
+			<object-name>airspeed_tenthousands</object-name>
 			<property>position/altitude-ft</property>
-			<factor>0.0001</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
-	</animation>
-
-
-	<animation>
-		<type>textranslate</type>
-			<object-name>altitude_tenthousands</object-name>
-			<property>position/altitude-ft</property>
-			<factor>0.00001</factor>
-			<step>1</step>
-			<scroll>1</scroll>
-			<axis><x>0</x><y>1</y><z>0</z></axis>
+			<interpolation>
+				<entry><ind>10000.0</ind><dep>0.0</dep></entry>
+				<entry><ind>90000.0</ind><dep>1.0</dep></entry>
+			</interpolation>
+			<axis><x>0</x><y>1</y></axis>
 	</animation>
 
 
