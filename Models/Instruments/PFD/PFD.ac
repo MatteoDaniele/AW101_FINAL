@@ -1194,10 +1194,10 @@ refs 5
 4 0.049999982119 0.09999999404
 kids 0
 OBJECT poly
-name "altitude_tenthhousands"
+name "altitude_tenthousands"
 loc -5.190729 1.976016 -0.72611
 data 22
-altitude_tenthhousands
+altitude_tenthousands
 texrep 1 1
 crease 40.0 
 texture "pfd.png" 
