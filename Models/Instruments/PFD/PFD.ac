@@ -3,7 +3,7 @@ MATERIAL "pfd" rgb 0.8 0.8 0.8 amb 1 1 1 emis 1 1 1 spec 1 1 1 shi 50 trans 0
 MATERIAL "attitude_indicator" rgb 0.8 0.8 0.8 amb 1 1 1 emis 1 1 1 spec 1 1 1 shi 50 trans 0
 MATERIAL "main_screen" rgb 0.8 0.8 0.8 amb 1 1 1 emis 1 1 1 spec 1 1 1 shi 50 trans 0
 OBJECT world
-kids 22
+kids 16
 OBJECT poly
 name "Attitute_indicator"
 loc -5.17948 1.92827 -0.68674
@@ -1037,28 +1037,6 @@ refs 4
 3 0.0645198524 0.066980600357
 kids 0
 OBJECT poly
-name "airspeed_hundreds"
-loc -5.190729 1.976017 -0.63975
-data 17
-airspeed_hundreds
-texrep 1 1
-crease 40.0 
-texture "pfd.png" 
-numvert 4
--0.000593 0.00247 0.00127
-0.000593 -0.00247 0.00127
--0.000593 0.00247 -0.00127
-0.000593 -0.00247 -0.00127
-numsurf 1
-SURF 0x10
-mat 0
-refs 4
-0 0.950000047684 0.100000053644
-1 0.950000047684 0
-3 1 0
-2 1 0.100000053644
-kids 0
-OBJECT poly
 name "airspeed_needle"
 loc -5.190924 1.97597 -0.64229
 data 15
@@ -1083,48 +1061,26 @@ refs 5
 4 0.050000011921 0.100000008941
 kids 0
 OBJECT poly
-name "airspeed_tenths"
-loc -5.190729 1.976017 -0.63975
+name "airspeed_screen"
+loc -5.190729 1.976017 -0.64229
 data 15
-airspeed_tenths
+airspeed_screen
 texrep 1 1
 crease 40.0 
 texture "pfd.png" 
 numvert 4
--0.000593 0.00247 -0.00127
-0.000593 -0.00247 -0.00127
+-0.000592 0.00247 0.00381
+0.000593 -0.00247 0.00381
 -0.000593 0.00247 -0.00381
 0.000593 -0.00247 -0.00381
 numsurf 1
 SURF 0x10
 mat 0
 refs 4
-0 0.950000047684 0.100000053644
-1 0.950000047684 0
-3 1 0
-2 1 0.100000053644
-kids 0
-OBJECT poly
-name "airspeed_units"
-loc -5.190729 1.976017 -0.64483
-data 14
-airspeed_units
-texrep 1 1
-crease 40.0 
-texture "pfd.png" 
-numvert 4
--0.000593 0.00247 0.00127
-0.000593 -0.00247 0.00127
--0.000593 0.00247 -0.00127
-0.000593 -0.00247 -0.00127
-numsurf 1
-SURF 0x10
-mat 0
-refs 4
-0 0.950000047684 0.100000053644
-1 0.950000047684 0
-3 1 0
-2 1 0.100000053644
+0 0.000000864267 1
+1 0.000000029802 0.000070363283
+3 0.999999165535 0
+2 1 0.999928832054
 kids 0
 OBJECT poly
 name "altitude_frame"
@@ -1177,28 +1133,6 @@ refs 4
 6 0.035436719656 0.024990409613
 kids 0
 OBJECT poly
-name "altitude_hundreds"
-loc -5.190729 1.976016 -0.73119
-data 17
-altitude_hundreds
-texrep 1 1
-crease 40.0 
-texture "pfd.png" 
-numvert 4
--0.000593 0.00247 0.00127
-0.000593 -0.00247 0.00127
--0.000593 0.00247 -0.00127
-0.000593 -0.00247 -0.00127
-numsurf 1
-SURF 0x10
-mat 0
-refs 4
-0 0.950005054474 0.099989950657
-1 0.950005054474 0.00001007691
-3 0.999995052814 0.000010073185
-2 0.999995052814 0.099989950657
-kids 0
-OBJECT poly
 name "altitude_needle"
 loc -5.190924 1.97597 -0.73119
 data 15
@@ -1223,92 +1157,26 @@ refs 5
 4 0.049999982119 0.09999999404
 kids 0
 OBJECT poly
-name "altitude_tenthousands"
-loc -5.190729 1.976016 -0.72611
-data 21
-altitude_tenthousands
-texrep 1 1
-crease 40.0 
-texture "pfd.png" 
-numvert 4
--0.000593 0.00247 0.00127
-0.000593 -0.00247 0.00127
--0.000593 0.00247 -0.00127
-0.000593 -0.00247 -0.00127
-numsurf 1
-SURF 0x10
-mat 0
-refs 4
-0 0.950000047684 0.100000053644
-1 0.950000047684 0
-3 1 0
-2 1 0.100000053644
-kids 0
-OBJECT poly
-name "altitude_tenths"
-loc -5.190729 1.976016 -0.72611
+name "altitude_screen"
+loc -5.190729 1.976016 -0.73119
 data 15
-altitude_tenths
+altitude_screen
 texrep 1 1
 crease 40.0 
 texture "pfd.png" 
 numvert 4
+-0.000592 0.00247 0.00635
+0.000592 -0.00247 0.00635
 -0.000593 0.00247 -0.00635
 0.000593 -0.00247 -0.00635
--0.000593 0.00247 -0.00889
-0.000593 -0.00247 -0.00889
 numsurf 1
 SURF 0x10
 mat 0
 refs 4
-0 0.950005054474 0.099989950657
-1 0.950005054474 0.00001007691
-3 0.999995052814 0.000010073185
-2 0.999995052814 0.099989950657
-kids 0
-OBJECT poly
-name "altitude_thousands"
-loc -5.190729 1.976016 -0.72611
-data 18
-altitude_thousands
-texrep 1 1
-crease 40.0 
-texture "pfd.png" 
-numvert 4
--0.000593 0.00247 -0.00127
-0.000593 -0.00247 -0.00127
--0.000593 0.00247 -0.00381
-0.000593 -0.00247 -0.00381
-numsurf 1
-SURF 0x10
-mat 0
-refs 4
-0 0.950000047684 0.100000053644
-1 0.950000047684 0
-3 1 0
-2 1 0.100000053644
-kids 0
-OBJECT poly
-name "altitude_units"
-loc -5.190729 1.976016 -0.72611
-data 14
-altitude_units
-texrep 1 1
-crease 40.0 
-texture "pfd.png" 
-numvert 4
--0.000593 0.00247 -0.00889
-0.000593 -0.00247 -0.00889
--0.000593 0.00247 -0.01143
-0.000593 -0.00247 -0.01143
-numsurf 1
-SURF 0x10
-mat 0
-refs 4
-0 0.950005054474 0.099990010262
-1 0.950005054474 0.000009983778
-3 0.99999499321 0.000009983778
-2 0.999995052814 0.099990010262
+0 -0.000000029802 0.999995708466
+1 -0.000000029802 0.000015884638
+3 1 0.000000029802
+2 0.999995350838 0.999999880791
 kids 0
 OBJECT poly
 name "helicopter_symbol"

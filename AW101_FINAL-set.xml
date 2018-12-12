@@ -79,9 +79,9 @@ with FDM given in MBDYN.
             <internal type="bool">true</internal>
             <config>
                 <ground-level-nearplane-m type="double">5.5f</ground-level-nearplane-m>
-                <x-offset-m type="double">0.68</x-offset-m>  <!--blender y-->
-                <y-offset-m type="double">2.22</y-offset-m>  <!--blender z-->
-                <z-offset-m type="double">-4.16</z-offset-m> <!--blender x-->
+                <x-offset-m type="double">0.68674</x-offset-m>  <!--blender y 0.68-->
+                <y-offset-m type="double">2.22</y-offset-m>  <!--blender z 2.22-->
+                <z-offset-m type="double">-4.16</z-offset-m> <!--blender x -4.16-->
                 <limits>
                     <enabled type="bool">false</enabled>
                     <left>
@@ -141,6 +141,19 @@ with FDM given in MBDYN.
 					 <z-offset-m type="double">50</z-offset-m>
             </config>
         </view>
+        <view n="103">
+            <name>PFD</name>
+            <type>lookfrom</type>
+            <config>
+				 <from-model type="bool">true</from-model>
+				 <from-model-idx type="int">0</from-model-idx>
+				 <at-model type="bool">true</at-model>
+				 <at-model-idx type="int">0</at-model-idx>
+                    <x-offset-m type="double">0.68674</x-offset-m>
+                    <y-offset-m type="double">2.0</y-offset-m>
+                    <z-offset-m type="double">-4.90944</z-offset-m>
+            </config>
+        </view>
 
 
 <!-- sound to be added
@@ -156,10 +169,10 @@ with FDM given in MBDYN.
         <properties_initializer>
             <file>Aircraft/AW101_FINAL/Nasal/AW_101.nas</file>
         </properties_initializer>
-        <!--
         <PFD_Flight_fundamentals>
             <file>Aircraft/AW101_FINAL/Nasal/PFDDisplaysFlight.nas</file>
         </PFD_Flight_fundamentals>
+<!--
         <PFD_accessories>
             <file>Aircraft/AW101_FINAL/Nasal/PFDDisplayLeft.nas</file>
         </PFD_accessories>
