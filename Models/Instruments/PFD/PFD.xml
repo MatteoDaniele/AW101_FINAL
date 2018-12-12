@@ -73,7 +73,7 @@
 	<animation>
 		<type>translate</type> 
 		<object-name>Sideslip_indicator</object-name>  
-		<property>accelerations/ned/east-accel-fps_sec</property> 
+		<property>AW_101/acceleration-y-fps</property>
 		<factor>1.000000</factor>  
 		<center>  
 			<x-m>-5.1677</x-m>  
