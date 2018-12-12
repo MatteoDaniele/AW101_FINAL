@@ -188,26 +188,7 @@
 			<property>orientation/pitch-deg</property>
 			<interpolation>
 				<entry><ind>-90.0</ind><dep>-0.3515625</dep></entry>
-				<!--
-				<entry><ind>-80.0</ind><dep>-0.0390625</dep></entry>
-				<entry><ind>-70.0</ind><dep>-0.0390625</dep></entry>
-				<entry><ind>-60.0</ind><dep>-0.0390625</dep></entry>
-				<entry><ind>-50.0</ind><dep>-0.0390625</dep></entry>
-				<entry><ind>-40.0</ind><dep>-0.0390625</dep></entry>
-				<entry><ind>-30.0</ind><dep>-0.0390625</dep></entry>
-				<entry><ind>-20.0</ind><dep>-0.0390625</dep></entry>
-				<entry><ind>-10.0</ind><dep>-0.0390625</dep></entry>
-				-->
 				<entry><ind>0.0</ind><dep>0.0</dep></entry>
-				<!--
-				<entry><ind>10.0</ind><dep>0.0390625</dep></entry>
-				<entry><ind>20.0</ind><dep>0.0390625</dep></entry>
-				<entry><ind>30.0</ind><dep>0.0390625</dep></entry>
-				<entry><ind>40.0</ind><dep>0.0390625</dep></entry>
-				<entry><ind>50.0</ind><dep>0.0390625</dep></entry>
-				<entry><ind>60.0</ind><dep>0.0390625</dep></entry>
-				<entry><ind>70.0</ind><dep>0.0390625</dep></entry>
-				<entry><ind>80.0</ind><dep>0.0390625</dep></entry>-->
 				<entry><ind>90.0</ind><dep>0.3515625</dep></entry>
 			</interpolation>
 			<axis><x>0</x><y>1</y><z>0</z></axis>
@@ -220,6 +201,91 @@
 		</transform>
 	</animation>
 
+	<!-- airspeed indicator -->
+	<animation>
+		<type>textranslate</type>
+			<object-name>airspeed_units</object-name>
+			<property>velocities/airspeed-kt</property>
+			<factor>0.1</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+			<object-name>airspeed_tenths</object-name>
+			<property>velocities/airspeed-kt</property>
+			<factor>0.01</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
+
+
+	<animation>
+		<type>textranslate</type>
+			<object-name>airspeed_hundreds</object-name>
+			<property>velocities/airspeed-kt</property>
+			<factor>0.001</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
+
+	<!-- altitude indicator -->
+	<animation>
+		<type>textranslate</type>
+			<object-name>altitude_units</object-name>
+			<property>position/altitude-ft</property>
+			<factor>0.1</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+			<object-name>altitude_tenths</object-name>
+			<property>position/altitude-ft</property>
+			<factor>0.01</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
+
+
+	<animation>
+		<type>textranslate</type>
+			<object-name>altitude_hundreds</object-name>
+			<property>position/altitude-ft</property>
+			<factor>0.001</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
+
+
+	<animation>
+		<type>textranslate</type>
+			<object-name>altitude_thousands</object-name>
+			<property>position/altitude-ft</property>
+			<factor>0.0001</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
+
+
+	<animation>
+		<type>textranslate</type>
+			<object-name>altitude_tenthousands</object-name>
+			<property>position/altitude-ft</property>
+			<factor>0.00001</factor>
+			<step>1</step>
+			<scroll>1</scroll>
+			<axis><x>0</x><y>1</y><z>0</z></axis>
+	</animation>
 
 
 </PropertyList> 
