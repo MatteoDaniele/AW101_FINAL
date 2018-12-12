@@ -87,11 +87,11 @@
 		</axis>  
 		<interpolation> 
 			<entry>  
-				<ind>2.0</ind>
+				<ind>-2.0</ind>
 				<dep>-0.0054</dep> 
 			</entry>  
 			<entry> 
-				<ind>-2.0</ind>
+				<ind>2.0</ind>
 				<dep>0.0054</dep> 
 			</entry> 
 		</interpolation> 
