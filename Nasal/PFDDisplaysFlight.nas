@@ -39,7 +39,7 @@ var airspeedDisplay = canvas.new(
 {
     "name": "airspeedDisplay",
     "size": [1024,1024], # underlying texture size
-    "view": [640,320], # virtual resolution of the Display
+    "view": [64,32], # virtual resolution of the Display
     "mipmapping": 1
 });
 var airspeedFontSize = 32;

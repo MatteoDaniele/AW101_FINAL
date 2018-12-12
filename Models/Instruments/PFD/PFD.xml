@@ -218,7 +218,7 @@
 			<object-name>airspeed_tenths</object-name>
 			<property>velocities/airspeed-kt</property>
 			<interpolation>
-				<entry><ind>10.0</ind><dep>0.0</dep></entry>
+				<entry><ind>10.0</ind><dep>0.1</dep></entry>
 				<entry><ind>90.0</ind><dep>0.9</dep></entry>
 			</interpolation>
 			<axis><x>0</x><y>1</y></axis>
@@ -229,7 +229,7 @@
 			<object-name>airspeed_hundreds</object-name>
 			<property>velocities/airspeed-kt</property>
 			<interpolation>
-				<entry><ind>100.0</ind><dep>0.0</dep></entry>
+				<entry><ind>100.0</ind><dep>0.1</dep></entry>
 				<entry><ind>900.0</ind><dep>0.9</dep></entry>
 			</interpolation>
 			<axis><x>0</x><y>1</y></axis>
@@ -254,7 +254,7 @@
 			<object-name>altitude_tenths</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
-				<entry><ind>10.0</ind><dep>0.0</dep></entry>
+				<entry><ind>10.0</ind><dep>0.1</dep></entry>
 				<entry><ind>90.0</ind><dep>0.9</dep></entry>
 			</interpolation>
 			<axis><x>0</x><y>1</y></axis>
@@ -265,7 +265,7 @@
 			<object-name>altitude_hundreds</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
-				<entry><ind>100.0</ind><dep>0.0</dep></entry>
+				<entry><ind>100.0</ind><dep>0.1</dep></entry>
 				<entry><ind>900.0</ind><dep>0.9</dep></entry>
 			</interpolation>
 			<axis><x>0</x><y>1</y></axis>
@@ -275,7 +275,7 @@
 			<object-name>altitude_thousands</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
-				<entry><ind>1000.0</ind><dep>0.0</dep></entry>
+				<entry><ind>1000.0</ind><dep>0.1</dep></entry>
 				<entry><ind>9000.0</ind><dep>0.9</dep></entry>
 			</interpolation>
 			<axis><x>0</x><y>1</y></axis>
@@ -286,7 +286,7 @@
 			<object-name>altitude_tenthousands</object-name>
 			<property>position/altitude-ft</property>
 			<interpolation>
-				<entry><ind>10000.0</ind><dep>0.0</dep></entry>
+				<entry><ind>10000.0</ind><dep>0.1</dep></entry>
 				<entry><ind>90000.0</ind><dep>0.9</dep></entry>
 			</interpolation>
 			<axis><x>0</x><y>1</y></axis>
