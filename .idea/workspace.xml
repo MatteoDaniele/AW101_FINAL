@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b54b9ba5-51f5-4a58-9470-fa513b369b11" name="Default Changelist" comment="" />
+    <list default="true" id="b54b9ba5-51f5-4a58-9470-fa513b369b11" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Instruments/PFD/PFD.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Instruments/PFD/PFD.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +45,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Models/Instruments/PFD/PFD.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="143">
-                  <caret line="266" lean-forward="true" selection-start-line="266" selection-end-line="266" />
+                <state relative-caret-position="449">
+                  <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -55,8 +58,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/../AW_101_NO_FDM/Models/Instruments/PFD/PFD.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="359">
-                  <caret line="511" column="42" lean-forward="true" selection-start-line="511" selection-start-column="22" selection-end-line="511" selection-end-column="42" />
+                <state relative-caret-position="413">
+                  <caret line="544" column="42" selection-start-line="544" selection-start-column="22" selection-end-line="544" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -86,6 +89,7 @@
       <replace>&lt;ind&gt;1.0&lt;/ind&gt;</replace>
       <replace>&lt;ind&gt;9.0000&lt;/ind&gt;</replace>
       <replace>&lt;ind&gt;1.0000&lt;/ind&gt;</replace>
+      <replace>position/altitude-ft</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -257,11 +261,33 @@
       <option name="project" value="LOCAL" />
       <updated>1544624669953</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="&quot;added digital animations&quot;">
+      <created>1544624864661</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544624864661</updated>
+    </task>
+    <task id="LOCAL-00014" summary="&quot;added digital animations&quot;">
+      <created>1544624895955</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544624895955</updated>
+    </task>
+    <task id="LOCAL-00015" summary="&quot;added digital animations&quot;">
+      <created>1544625871941</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544625871941</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1021" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.110173956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -320,15 +346,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../AW_101_NO_FDM/Models/Instruments/PFD/PFD.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="511" column="42" lean-forward="true" selection-start-line="511" selection-start-column="22" selection-end-line="511" selection-end-column="42" />
+        <state relative-caret-position="413">
+          <caret line="544" column="42" selection-start-line="544" selection-start-column="22" selection-end-line="544" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Models/Instruments/PFD/PFD.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="266" lean-forward="true" selection-start-line="266" selection-end-line="266" />
+        <state relative-caret-position="449">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
         </state>
       </provider>
     </entry>

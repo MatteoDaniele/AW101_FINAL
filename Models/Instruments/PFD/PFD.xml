@@ -60,7 +60,7 @@
 		</axis> 
 		<interpolation>  
 			<entry> 
-				<ind>-60.0</ind>  
+				<ind>-60.0000</ind>
 				<dep>-60.0000</dep>  
 			</entry>  
 			<entry> 
