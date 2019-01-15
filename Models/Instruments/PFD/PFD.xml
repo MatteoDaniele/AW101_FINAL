@@ -32,14 +32,9 @@
 			<z>0.0233</z>  
 		</axis>  
 		<interpolation>  
-			<entry> 
-				<ind>0.0000</ind>  
-				<dep>0.0000</dep>  
-			</entry> 
-			<entry> 
-				<ind>100.0</ind>  
-				<dep>-360.0000</dep> 
-			</entry>  
+			<entry><ind>0.0000</ind><dep>0.0000</dep></entry> 
+			<entry><ind>100.0</ind><dep>-360.0000</dep></entry>			 
+			<entry><ind>100000.0</ind><dep>-360000.0000</dep></entry>  
 		</interpolation>  
 	</animation> 
 	<!--roll_indicator--> 
