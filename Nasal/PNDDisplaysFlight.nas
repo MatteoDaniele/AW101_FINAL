@@ -63,12 +63,15 @@ var headingStatus = func()
 setlistener("orientation/heading-deg",func{headingStatus()});
 
 # groundspeed display -------------------------------------------------
-gsp = getprop("velocities/groundspeed-kt");
+#gsp = getprop("velocities/groundspeed-kt");
+# TODO: to be re-changed when groundspeed will be available
+gsp = getprop("velocities/airspeed-kt");
+
 groundspeedInfos.setText(sprintf("%.0f KTS",gsp))
                 .enableUpdate();
 var groundspeedStatus = func()
 {
-    property = getprop("velocities/groundspeed-kt");
+    property = getprop("velocities/airspeed-kt");
     groundspeedInfos.updateText(sprintf("%.0f  KTS",property)).show();
 }
-setlistener("velocities/groundspeed-kt",func{groundspeedStatus()});
+setlistener("velocities/airspeed-kt",func{groundspeedStatus()});
