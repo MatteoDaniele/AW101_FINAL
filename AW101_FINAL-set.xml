@@ -172,6 +172,9 @@ with FDM given in MBDYN.
         <PFD_Flight_fundamentals>
             <file>Aircraft/AW101_FINAL/Nasal/PFDDisplaysFlight.nas</file>
         </PFD_Flight_fundamentals>
+        <PND_Flight_fundamentals>
+            <file>Aircraft/AW101_FINAL/Nasal/PNDDisplaysFlight.nas</file>
+        </PND_Flight_fundamentals>
 <!--
         <PFD_accessories>
             <file>Aircraft/AW101_FINAL/Nasal/PFDDisplayLeft.nas</file>

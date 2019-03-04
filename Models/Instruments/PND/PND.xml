@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>  
+<PropertyList> 
+	<!--  
+  
+	***********************************************************  
+	*********************************************************** 
+		Part of this file was generating by a blender script  
+  
+		Script fg2blender v0.1 alpha  (c)paf 
+		download: http://gitorious.org/paf/fg2blender  
+		contacts: http://equipe-flightgear.forumactif.com  
+		doc:      http://wiki.flightgear.org/Fr/fg2blender  
+	*********************************************************** 
+	*********************************************************** 
+  
+	--> 
+	<path>./PND.ac</path>  
+	<!--Armature-->  
+	<animation>  
+		<type>rotate</type> 
+		<object-name>compass</object-name>  
+		<property>orientation/heading-deg</property>  
+		<factor>1.000000</factor>  
+		<center> 
+			<x-m>-5.1464</x-m>  
+			<y-m>0.6867</y-m>  
+			<z-m>1.7903</z-m>  
+		</center> 
+		<axis>  
+			<x>0.0972</x> 
+			<y>0.0000</y> 
+			<z>0.0233</z>  
+		</axis> 
+		<interpolation> 
+			<entry> 
+				<ind>0.0000</ind> 
+				<dep>0.0000</dep> 
+			</entry>  
+			<entry>  
+				<ind>360.0000</ind>  
+				<dep>360.0000</dep> 
+			</entry>  
+		</interpolation>  
+	</animation> 
+</PropertyList> 
+  

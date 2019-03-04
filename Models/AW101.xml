@@ -972,10 +972,13 @@
 	</animation>
 
 	<model>
-		<path>AW101_glass.ac</path>
+		<path>Instruments/PFD/PFD.xml</path>
 	</model>
 	<model>
-		<path>Instruments/PFD/PFD.xml</path>
+		<path>Instruments/PND/PND.xml</path>		
+	</model>
+	<model>		
+		<path>AW101_glass.ac</path>
 	</model>
 </PropertyList>  
   
